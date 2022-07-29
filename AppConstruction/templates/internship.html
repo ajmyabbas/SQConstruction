@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <title>Internship</title>
+        <meta charset="utf-8">
+        <title></title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Construction Company Website Template" name="keywords">
+        <meta content="Construction Company Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet"> 
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.cs' %}"rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}"rel="stylesheet">
+        <link href="{% static 'lib/slick/slick.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick-theme.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <style>
+           
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <!--<div class="logo">
+                                <a href="load_home">
+                                    <h1></h1>
+                                    <img src="{% static 'images/logo.png' %}" alt="Logo"> 
+                                </a>
+                            </div>-->
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Opening Hour</h3>
+                                            <p>Mon - Fri, 8:00 - 9:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Call Us</h3>
+                                            <p>+91 484 4063630</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Us</h3>
+                                            <p>sqenquiry2021@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <div class="logo">
+                            <a href="{% url 'load_home' %}">
+                                <h1></h1>
+                                <img src="{% static 'images/logo.png' %}" width="50"height="50" alt="Logo"> 
+                            </a>
+                        </div>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="{% url 'load_home' %}" class="nav-item nav-link active">HOME</a>
+                                <a href="" class="nav-item nav-link">CIVIL WORKS</a>
+                                <a href="" class="nav-item nav-link">CONSTRUCTION CHEMICALS</a>
+                                <a href="{% url 'internship' %}" class="nav-item nav-link">INTERNSHIP</a>
+                                <a href="" class="nav-item nav-link">WORK UPDATES</a>
+                                <a href="" class="nav-item nav-link">CONTACT</a>
+                                <a href="" class="nav-item nav-link">GALLERY</a>
+                                
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="bi-three-dts-vertical"></i></a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">OUR PRODUCTS</a>
+                                        <a href="single.html" class="dropdown-item">OUR CLIENTS</a>
+                                        <a href="single.html" class="dropdown-item">CAREER</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<div class="ml-auto">
+                                <a class="btn" href="#">Get A Quote</a>
+                            </div>-->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-12">
+                <h3>Students Internship Programme</h3>
+            </div>
+            <div class="col-12">
+                <a href="{% url 'load_home' %}">Home</a>
+                <a href="{% url 'internship' %}">Internship</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+ <!-- AboutInternship Start -->
+ <div class="about wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="about-img">
+                    <img src="{% static 'images/intern-1.jpg' %}"class="img-thumbnail" alt="internship Image">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <div class="section-header text-left">
+                    <p>Welcome Interns</p>
+                    <h4>Internship For Civil Engineering Candidates</h4>
+                </div>
+                <div class="about-text">
+                    <p class="text-justify">
+                        SQ Engineering Contractors Pvt Ltd. offers, Internship for civil engineering students . Internship provides you an in-depth knowledge on civil department students. This internship enables the students to understand and learn the current trend in the job market.
+                        Internship provides great opportunity to get real life experience and exposure. Students will&nbsp; prefer internships to&nbsp; 
+                        build their profile for their jobs and also for their higher studies. Based on performance, 
+                        our company provides best offers for interns.</p>
+                    <a class="btn" href="{% url 'learnmore' %}">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="single-content wow fadeInUp text-justify">
+<h5>Training Syllabus</h5>
+<ul><li>Onsite Training &amp; Site Execution &#8211; Road Works, Retaining &amp; River Protection Wall, Underwater Construction, Heritage Works, Interior Designing &amp; Commissioning, Onsite Safety Measures &amp; Precautions, Equipments Needed and Waterbodies &amp; Geotextile Works
+
+</li><li>Office Procedures &amp; Documentation &#8211; Estimation &amp; Billing, Central &amp; State Govt BOQ Preparation, Online Tendering Process, Quantity Surveying &amp; Material Calculations, Labours &amp; Subcontractors Controlling and Necessary Accounting &amp; GST Bill Preparation
+
+</li><li>Basic Tools in Auto CAD</li><li><span style="color: initial;">KMBR &amp; KPBR Basics</span></li>
+<li><span style="color: initial;">Introduction to Construction Materials &amp; Chemicals</span> &#8211; Construction Material Testing</li></ul>
+                </div>
+
+            </div>
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <div class="sidebar-widget wow fadeInUp">
+                            <h2 class="widget-title">Recent Videos</h2>
+                    <div class="image-widget">
+                        <video controls src="http://sqgallery.com/wp-content/uploads/2022/04/WhatsApp-Video-2022-04-12-at-10.48.47-AM.mp4"></video>
+    
+                    </div>
+                </div></div></div>
+
+
+            
+        </div>
+    </div>
+
+    
+
+
+
+
+</div>
+
+
+
+
+
+<div class="single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="single-content wow fadeInUp">
+<div class="single-bio wow fadeInUp">
+    
+    <div class="single-bio-text">
+        <h3>Benefits of Doing a Civil Internships</h3>
+        <p>Student can get a real world experience and also our company provides a hands on training in a professional environment. 
+            Internships help to getting a chance to try all the possible jobs with explore different options in career i.e, our company provides best offers for interns.  </p>
+            <ul>
+                <li>A chance to develop your knowledge and skills in a particular field or industry.</li>
+                <li>Exploring different roles to see which one you would like to pursue.</li>
+                <li>Gaining valuable work experience to set you apart from other candidates.</li>
+                <li>Increases your job readiness by providing you skills and exposure in relevant areas.</li>
+                <li>Great opportunity to create a network of contacts.</li>
+                <li>Applying the concepts and strategies of academic study in a live work environment.</li>
+            </ul>
+        </p>
+    </div>
+
+
+</div></div></div>
+
+<div class="col-lg-4">
+    <div class="sidebar">
+        <div class="sidebar-widget wow fadeInUp">
+    <div class="image-widget">
+        <video controls src="http://sqgallery.com/wp-content/uploads/2022/04/WhatsApp-Video-2022-04-12-at-10.48.46-AM.mp4"></video>
+
+    </div>
+</div></div></div>
+
+
+</div></div></div>
+<div class="card" style="width:50rem;margin-left: 100px;">
+    <div class="card-body">
+<h5 class="card-header bg-warning">Colleges Participated in our Student Internship Programme</h5>
+<ol class="has-text-color" style="color:#164e6e"><li><strong>SSM Polytechnic College, Tirur</strong>
+</li><li><strong>Govt. Polytechnic College, Nattakom</strong></li><li><strong>Maria Polytechnic College, Marthandam</strong>
+</li><li><strong>Toc H Institute of Science &amp; Technology, Arakkunnam</strong></li>
+<li><strong>Noorul Islam Centre for Higher Education, Nagercoil</strong></li>
+<li><strong>Federal Institute of Science and Technology, Angamaly</strong></li><li><strong>Dr. N G P Institute of Technology, Coimbatore</strong></li>
+<li><strong>KMCT Polytechnic College, Kozhikode</strong></li>
+<li><strong>Mount Zion College of Engineering, Pathanamthitta</strong></li>
+<li><strong>Rajagiri School of Engineering and Technology, Ernakulam</strong></li>
+<li><strong>Marian Engineering College, Thiruvanathapuram</strong></li>
+<li><strong>Sreepathy Institute of Management and Technology, Palakkad </strong></li>
+<li><strong>Matha College of Technology, North Paravur</strong></li>
+<li><strong>Sree Narayana Guru College of Engineering and Technology, Payyanur, Kannur</strong>
+</li><li><strong>Kongu Engineering College, Erode, Tamil Nadu</strong></li></ol>
+</div>
+</div>
+<br><br>
+<div class="section-header  text-center">
+    <p >Gallery</p>
+    <h4> Internship training for Students of Kongu Engineering College</h4>
+</div>
+ 
+    
+    <div class="service">
+        <div class="container">
+            
+            <div class="row">
+<h5></h5> <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="service-item">
+        <div class="service-img">
+            <img src="{% static 'images//internpic1.jpeg' %}" alt="Image">
+            
+        </div>
+        <div class="service-text">
+            
+            <a class="btn" href="{% static 'images//internpic1.jpeg' %}" data-lightbox="service">+</a>
+        </div>
+    </div></div>
+
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item">
+            <div class="service-img">
+                <img src="{% static 'images//internpic2.jpeg'' %}" alt="Image">
+                
+            </div>
+            <div class="service-text">
+                
+                <a class="btn" href="{% static 'images//internpic2.jpeg' %}" data-lightbox="service">+</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item">
+            <div class="service-img">
+                <img src="{% static 'images//internpic3.jpeg' %}"width="250px"height="250px" alt="Image">
+                
+            </div>
+            <div class="service-text">
+               
+                <a class="btn" href="{% static 'images//internpic3.jpeg' %}" data-lightbox="service">+</a>
+            </div>
+        </div>
+    </div>
+
+   
+            </div>
+
+</div></div></div></div>
+
+
+    <!--footer -->
+
+
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>SQ Engineering Contractors P Ltd., XI/105-C1, Civil Lane Road, Kochi</p>
+                                <p><i class="fa fa-phone-alt"></i>+91 484 4063630 OR +91 98473 90086</p>
+                                <p><i class="fa fa-envelope"></i>sqenquiry2021@gmail.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Building Construction</a>
+                                <a href="">House Renovation</a>
+                                <a href="">Architecture Design</a>
+                                <a href="">Interior Design</a>
+                                <a href="">Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Contact Us</a>
+                                <a href="">Our Team</a>
+                                <a href="">Projects</a>
+                                <a href="">Testimonial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Newsletter</h2>
+                                <p>
+                                    </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Copyright © 2022 by SQEC Pvt. Ltd. </a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'lib/slick/slick.min.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>           
